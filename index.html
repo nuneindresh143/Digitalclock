@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <title>Digital Clock app</title>
+</head>
+<body>
+    <div class="digital-clock">
+        <i class="fa-solid fa-ellipsis-vertical dot-menu-btn" id="active-menu"></i>
+        <ul class="dot-menu"id="active-menu">
+        <li class="menu-item"id="active-menu">
+            <span class="clock-format-text"id="active-menu">24-hour format</span>
+            <div class="format-switch-btn"data-format="12"id="active-menu"></div>
+        </li>
+    </ul>
+        <div class="time">
+            <span class="hours"></span>
+            <span class="dots">:</span>
+            <span class="minutes"></span>
+            <div class="right-side">
+                <span class="period"></span>
+                <span class="seconds"></span>
+            </div>
+        </div>
+        <div class="calender">
+            <span class="month-name"></span>,
+            <span class="day-name"></span>
+            <span class="day-number"></span>
+            <span class="year"></span>
+        </div>
+        <div class="content">
+            <div class="column">
+                <select>
+                    <option value="hours"selected hidden>Hour</option>
+                </select>
+            </div>
+            <div class="column">
+                <select>
+                    <option value="minutes"selected hidden>Minutes</option>
+                </select>
+            </div>
+            <div class="column">
+                <select>
+                    <option value="AM/PM"selected hidden>AM/PM</option>
+                </select>
+            </div>
+        </div>
+        <button>Set Alarm</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
